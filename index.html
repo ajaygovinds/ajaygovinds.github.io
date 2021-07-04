@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/unicons.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="./images/beard.svg"/>
+    <link rel="shortcut icon" type="image/jpg" href="./images/beard.svg" />
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
@@ -122,7 +122,8 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image" style="padding: 0px 20%;">
-                        <img src="./images/profile_image.png" class="img-fluid" alt="it's me" style="border-radius: 50%; filter: grayscale(100%);">
+                        <img src="./images/profile_image.png" class="img-fluid" alt="it's me"
+                            style="border-radius: 50%; filter: grayscale(100%);">
                     </div>
                 </div>
 
@@ -455,10 +456,12 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="col-lg-6 col-12">
                     <div class="contact-form">
                         <h2 class="mb-4">Interested to work together ?
-                            <br>Let's talk !</h2>
+                            <br>Let's talk !
+                        </h2>
                     </div>
                     <div class="py-6 px-lg-5">
-                        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif" class="img-fluid rounded mx-auto d-block" alt="Responsive image" width="380px"/>
+                        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif"
+                            class="img-fluid rounded mx-auto d-block" alt="Responsive image" width="380px" />
                     </div>
                 </div>
 
@@ -472,10 +475,36 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row">
 
                 <div class="col-lg-12 col-12">
-                    <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
-                    <p class="copyright-text text-center">Designed by <a rel="nofollow"
-                            href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    <p class="copyright-text text-center"><b>Made with ❤️
+
+                            <script>document.write(new Date().getFullYear());
+                            </script>
+                        </b></p>
                 </div>
+
+                <div class="col-lg-12 col-12">
+                    <b>
+                        <div id="CounterVisitor text-center">
+                        </div>
+                    </b>
+                </div>
+                <script>
+                    var n = localStorage.getItem('on_load_counter');
+
+                    if (n === null) {
+                        n = 0;
+                    }
+                    n++;
+
+                    localStorage.setItem("on_load_counter", n);
+
+                    nums = n.toString().split('').map(Number);
+                    document.getElementById('CounterVisitor').innerHTML = '';
+                    for (var i of nums) {
+                        document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+                    }
+
+                </script>
 
             </div>
         </div>
