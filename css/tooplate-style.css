@@ -617,6 +617,7 @@ SKILL
 
   .animated-item {
     font-size: 26px;
+    width: 300px;
   }
 
   .navbar-collapse {
@@ -626,10 +627,6 @@ SKILL
 
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 12px 15px 0px 15px;
-  }
-
-  .animated-item {
-    width: 300px;
   }
 }
 
@@ -642,12 +639,15 @@ SKILL
 
 @media (max-width: 580px) and (min-width: 420px) {
   .animated-info {
-    min-width: 200px;
+    min-width: 180px;
   }
   .animated-item {
     font-size: 28px;
   }
 
+  .animated-item {
+    width: 200px;
+  }
   .nav-link {
     padding: 2px;
     font-size: 14px;
@@ -692,6 +692,40 @@ SKILL
   }
   .small-text {
     width: 400px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .timeline-wrapper:before {
+    
+    left: 14px;
+  }
+
+  .timeline-yr {
+    background: #474559;
+    border-radius: 100%;
+    position: absolute;
+    width: 100px;
+    height: 64px;
+    /* line-height: 9px; */
+    text-align: center;
+    padding: 12px 5px;
+    border-radius: 8px;
+    /* font-size: 9px;*/
+  }
+  .timeline-yr span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .timeline-info {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 432px;
+    margin-left: 50px;
+    margin-top: 75px;
   }
 
   .item {
