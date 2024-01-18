@@ -1,544 +1,596 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="description" content="This is my very first digita resume">
-    <meta name="author" content="Ajay Govind S">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="This is my very first digita resume">
+  <meta name="author" content="Ajay Govind S">
 
-    <title>Ajay Govind's - resume &#128008;</title>
+  <title>Ajay Govind's portfolio &#128008;</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="./images/beard.svg" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/tooplate-style.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!--
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="./assets/img/beard.svg" />
 
-Tooplate 2115 Marvel
-
-https://www.tooplate.com/view/2115-marvel
-
--->
+  <!-- =======================================================
+  * Template Name: Personal
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    <!-- GO TOP BUTTON -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-chevron-double-up"></i></button>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
 
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./images/beard.svg" width="35px" height="35px"> Ajay
-                Govind S</a>
+      <h1><a href="index.html">Ajay Govind</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2><span>Product designer</span> from <span class="indian-flag">IN<span style="color: #06038D;
+            border-bottom: none !important;">D</span>IA</span></h2>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link active" href="#header">Home</a></li> -->
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
+        <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+        <a href="https://www.linkedin.com/in/ajay-govind-s/" target="_blank" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.behance.net/ajay_govind_s" target="_blank" class="behance"><i
+            class="bi bi-behance"></i></a>
+      </div>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About Me</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#project" class="nav-link">Skills</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">My History</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Find me</span></a>
-                    </li>
-                </ul>
+    </div>
+  </header><!-- End Header -->
 
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                        <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                            <i class="color-mode-icon"></i>
-                            Color mode
-                        </div>
-                    </div>
-                </ul>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/me.png" class="img-fluid" alt=""
+            style="filter: drop-shadow(0px 4px 8px pink); border-radius: 20px;">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h4 style="margin-bottom: 15px;">Product Design • Selfless thought process 💚</h4>
+          <p style="margin-bottom: 30px;">
+            Seasoned Product Designer with a knack for problem-solving and impactful digital experiences. From gamified
+            platforms to healthcare VR, I blend creativity with strategy and lead teams to deliver standout designs.
+            Passionate about innovation, I thrive on collaboration and continuous learning,
+            always aiming to enhance user experiences. Committed to using design and tech to make a real difference.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="ageSpan"></span></li> -->
+                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a href="tel:+919488949470"><span>+91
+                      9488949470</span></a></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Coimbatore, India</span></li>
+              </ul>
             </div>
-        </div>
-    </nav>
-
-    <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text">
-                        <small class="small-text">Welcome to <span class="mobile-block">my resume
-                                website!</span></small>
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hey, I'm a</span>
-                            <div class="animated-info">
-                                <span class="animated-item">UX Designer</span>
-                                <span class="animated-item">Graphic Designer</span>
-                                <span class="animated-item">Web Developer</span>
-                                <span class="animated-item">UI Specialist</span>
-                                <span class="animated-item">Automation Tester</span>
-                            </div>
-                        </h1>
-
-                        <p><b>I can help</b> in doing <i>user reasearches</i> for your project, <b>creating</b>
-                            wireframes, mockups & prototypes, doing <span
-                                style="background-color: #ffc200; padding: 2px; color: #000000; font-weight: bold;">some
-                                creative illustration</span> art works and
-                            also <b>some</b> <i>development and testing</i> for YOU.</p>
-
-                        <div class="custom-btn-group mt-4">
-                            <a href="resume.pdf" class="btn mr-lg-2 mb-lg-3 custom-btn custom-btn-bg custom-btn-link"
-                                download="Ajay-Govind-resume.pdf"><i class="bi bi-file-earmark-pdf-fill" style="
-                                    margin-right: 2px;
-                                "></i> Download
-                                Resume</a>
-                            <a href="https://www.linkedin.com/in/ajay-govind-s/" target="_blank"
-                                class="btn mr-lg-2 mb-lg-3 custom-btn linkedin-btn"><i class="bi bi-linkedin" style="
-                                margin-right: 2px;
-                            "></i> Say Hi..!, on
-                                LinkedIn</a>
-                            <a href="https://www.behance.net/ajay_govind_s" target="_blank"
-                                class="btn mr-lg-2 mb-lg-3 custom-btn behance-btn"><img src="./images/behance-black.svg"
-                                    width="16px" height="16px" style="
-                                margin-right: 6px;
-                            ">Seen my portfolio?</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image" style="padding: 0px 20%;">
-                        <img src="./images/profile_image.png" class="img-fluid" alt="it's me"
-                            style="border-radius: 50%; filter: grayscale(100%);">
-                    </div>
-                </div>
-
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a
+                    href="mailto:ajaygovin@gmail.com"><span>ajaygovin@gmail.com</span></a></li>
+                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
+              </ul>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- PROJECTS -->
-    <section class="project py-5" id="project">
-        <div class="container">
+          <div class="row" style="padding: 25px 20px;">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <h2>Skills</h2>
+              </div>
 
-            <div class="row">
-                <div class="col-lg-15 text-center mx-auto col-15">
-
-                    <div class="col-lg-8 mx-auto">
-                        <h2>Skills I possess &#x1F9D9;</h2>
-                    </div>
-
-                    <div class="skill-container" id="skill-container">
-
-                    </div>
-                </div>
-
+              <div class="row skills-content">
+                <span class="skill-chip">Product Design</span>
+                <span class="skill-chip">Extended Reality (AR • VR)</span>
+                <span class="skill-chip">Ethical Decision Making</span>
+                <span class="skill-chip">Team Coordination</span>
+                <span class="skill-chip">Interpersonal Communication</span>
+                <span class="skill-chip">Team Leadership</span>
+                <span class="skill-chip">Documentation</span>
+                <span class="skill-chip">Strategic Decision Making</span>
+                <span class="skill-chip">Graphic Design</span>
+                <span class="skill-chip">Usability Testing</span>
+                <span class="skill-chip">Design Thinking</span>
+                <span class="skill-chip">UX UI Design</span>
+                <span class="skill-chip">User Research</span>
+                <span class="skill-chip-tool">Figma</span>
+                <span class="skill-chip-tool">Adobe Creative Suite</span>
+                <span class="skill-chip-tool">Microsoft 365</span>
+                <span class="skill-chip-tool">Unity</span>
+                <span class="skill-chip-tool">Blender</span>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!--  ======= LinkedIn Embed post  ======= -->
+    <!-- <div style="position:relative;overflow:hidden;padding-top:56.25%;">
+      <iframe frameborder="0" style="position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 350px;
+      border-radius: 8px;"
+        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7051811259700178944"></iframe>
+    </div> -->
+
+    <!-- ======= Skills  ======= 
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+        <span class="skill-chip">Product Design</span>
+        <span class="skill-chip">Extended Reality (AR • VR)</span>
+        <span class="skill-chip">Ethical Decision Making</span>
+        <span class="skill-chip">Team Coordination</span>
+        <span class="skill-chip">Interpersonal Communication</span>
+        <span class="skill-chip">Team Leadership</span>
+        <span class="skill-chip">Documentation</span>
+        <span class="skill-chip">Graphic Design</span>
+        <span class="skill-chip">Usability Testing</span>
+        <span class="skill-chip">Design Thinking</span>
+        <span class="skill-chip">UX UI Design</span>
+        <span class="skill-chip">User Research</span>
+        <span class="skill-chip-tool">Figma</span>
+        <span class="skill-chip-tool">Adobe Creative Suite</span>
+        <span class="skill-chip-tool">Microsoft 365</span>
+        <span class="skill-chip-tool">Unity</span>
+        <span class="skill-chip-tool">Blender</span>
+      </div>
+
+    </div> End Skills -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>Check My Resume</p>
+          </div>
         </div>
-    </section>
+        <div class="col-lg-6" style="display: flex;
+        align-items: center;">
+          <a href="/assets/AjayGovind-resume.pdf" class="download-resume" download="Ajay-Govind-resume.pdf">Download
+            Resume</a>
+        </div>
+      </div>
 
-    <!-- FEATURES -->
-    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-        <div class="container">
-            <div class="row">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <p><em>As a proven Product Designer with a focus on Problem Solving and Design Thinking, I bring a blend of
+                creativity and strategic thinking to the table. Ready to apply my skills and contribute to the success
+                of a
+                collaborative and continuous learning team.</em>
+            </p>
+            <p>
+            <ul>
+              <li>Feb 28<sup>th</sup>, 1995</li>
+              <li>Coimbatore, Tamil Nadu, IN</li>
+              <li><a href="tel:+919488949470"><span>+91
+                    9488949470</span></a></li>
+              <li><a href="mailto:ajaygovin@gmail.com"><span>ajaygovin@gmail.com</span></a></li>
+              <li>English | Malayalam | Tamil</li>
+            </ul>
+            </p>
+          </div>
 
-                <div class="col-lg-6 col-12">
-                    <h2 class="mb-4">Experiences</h2>
 
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>Sep. 2019 - Present</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Sr. Tester Ux/Ui</span>
-                                    <br><small class="im-small">Etisalat Telecommunications</small>
-                                    <br><small style="bottom: 0px;"> <i class="bi bi-geo-alt-fill"> Dubai,
-                                            UAE</i></small>
-                                </h3>
-                                <hr>
-                                <p>
-                                    <i class="bi bi-align-center"></i> I have worked in a few in-house B2C digital
-                                    products for verifying and validating
-                                    the <b>User Experience</b>
-                                    of the products;
-                                    <br><br>
-                                    <!-- &emsp; : 4 tab space-->
-                                    <u>The list
-                                        of applications are</u>
-                                    <br>
-                                    <span style="font-size: 16px;">
-                                        <i class="bi bi-dash-lg"></i>
-                                        Etisalat Webpage - <a href="https://www.etisalat.ae/en/index.jsp"
-                                            target="_blank"
-                                            style="font-size: 14px;">https://www.etisalat.ae/en/index.jsp</a>
-                                    </span>
-                                    <br>
-                                    <span style="font-size: 16px;">
-                                        <i class="bi bi-dash-lg"></i>
-                                        Etisalat Mobile Application
-                                        <br>
-                                        <span style="font-size: 14px;">
-                                            &emsp;&emsp;<img src="./images/playstore.svg" width="16px" height="16px"> :
-                                            <a href="https://play.google.com/store/apps/details?id=com.Etisalat.ETIDA&hl=en_IN&gl=US"
-                                                target="_blank">https://play.google.com/store/apps/details?id=com.Etisalat.ETIDA&hl=en_IN&gl=US</a>
-                                        </span>
-                                        <br>
-                                        <span style="font-size: 14px;">
-                                            &emsp;&emsp;<img src="./images/app-store.svg" width="16px" height="16px"> :
-                                            <a href="https://apps.apple.com/ae/app/my-etisalat-uae/id866147547"
-                                                target="_blank">https://apps.apple.com/ae/app/my-etisalat-uae/id866147547</a>
-                                        </span>
-                                    </span>
-                                    <br>
-                                    <span style="font-size: 16px;">
-                                        <i class="bi bi-dash-lg"></i>
-                                        Smiles UAE Mobile Application
-                                        <br>
-                                        <span style="font-size: 14px;">
-                                            &emsp;&emsp;<img src="./images/playstore.svg" width="16px" height="16px"> :
-                                            <a href="https://play.google.com/store/apps/details?id=ae.etisalat.smiles&hl=en_IN&gl=US"
-                                                target="_blank">https://play.google.com/store/apps/details?id=ae.etisalat.smiles&hl=en_IN&gl=US</a>
-                                        </span>
-                                        <br>
-                                        <span style="font-size: 14px;">
-                                            &emsp;&emsp;<img src="./images/app-store.svg" width="16px" height="16px"> :
-                                            <a href="https://apps.apple.com/ae/app/smiles-uae/id1225034537"
-                                                target="_blank">https://apps.apple.com/ae/app/smiles-uae/id1225034537</a>
-                                        </span>
-                                    </span>
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i> I work as Senior Tester by verifying the User
-                                    Interface (UI) and validating the
-                                    User Experience (UX) for every digitally transformed marketing product in the
-                                    company.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    I closely work with the developers, QA, solution team, product owners, and
-                                    sometimes designers to make different changes and enhancements through the inputs
-                                    provided
-                                    horizontally, including myself.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    I'm having hands-on experience on verifying and validating the designs of a B2C
-                                    SAS(Self Assisting System) product.
-                                </p>
-                            </div>
-                        </div>
+          <!-- education -->
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Master of Business Administration - General</h4>
+            <h5>(ODL) 2021 - Present</h5>
+            <p><em>Amrita Vishwa Vidyapeetham (AHEAD)</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>B. Tech. Computer Science Engineering</h4>
+            <h5>2013 - 2017</h5>
+            <p><em>Amrita Vishwa Vidyapeetham, Ettimadai, TN, India</em></p>
+            <p>
+            <ul>
+              <li>Developed a passion for designing and developing websites and creating Android applications during
+                college.</li>
+              <li>Explored various technologies and methodologies to actualize digital ideas.
+              </li>
+              <li>Volunteered for multiple initiatives, gaining insights into teamwork and coordination.</li>
+              <li>Enhanced interpersonal skills and deepened understanding of professional collaborative dynamics.
+              </li>
+              <li>Successfully developed an Accident Detection Alert System as a final year project, utilizing
+                technologies such as Accelerometer, Pressure Sensors, GPS Sensors, Arduino, and Google Maps API.
+              </li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>K-12</h4>
+            <h5>2000 - 2012</h5>
+            <p><em>Amrita Vidyalayam, Coimbatore, TN, India</em></p>
+          </div>
+        </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>Oct. 2018 - Jul. 2019</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Graphic Designer Ux/Ui</span>
-                                    <br><small class="im-small">Knowledge Len Pvt. Ltd.</small>
-                                    <a href="https://www.knowledgelens.com/" target="_blank"><i class="bi bi-link-45deg"
-                                            style="font-size: 22px;"></i></a>
-                                    <br><small style="bottom: 0px;"> <i class="bi bi-geo-alt-fill"> Bengaluru,
-                                            India</i></small>
-                                </h3>
-                                <hr>
-                                <p>
-                                    <i class="bi bi-align-center"></i> I have worked in a few in-house B2C digital
-                                    products for verifying and validating
-                                    the <b>User Experience</b>
-                                    of the products;
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i> I had incorporated User Experience (UX) into the
-                                    product by following the <b>Design Thinking approach</b>. I had an opportunity to
-                                    work
-                                    along with the <i>developers, product owners, and solution architects</i>.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    I explored the range of ideas from different directions since the projects included
-                                    the C-level stakeholders, where the interactions were very insightful.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    I had designed Wireframes and Prototypes, which includes <b>creating UI
-                                        components</b> and
-                                    <b>some Icons</b> for the screens the team develops. My responsibility was to
-                                    provide them
-                                    with a <b>high-fidelity mockup</b> at the end of my designing phase.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    I also designed a <b>few Posters</b> and a <b>couple of infographics</b> to promote
-                                    the company
-                                    through various social media platforms like <i>LinkedIn, Facebook, and Blog
-                                        posts</i>.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    I had an opportunity to retouch and export the images to improve the company's
-                                    website's visual aesthetics.
-                                </p>
-                            </div>
-                        </div>
+        <!-- profession experience -->
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Project Engineer</h4>
+            <h5>Apr/2022 - Present</h5>
+            <p><em>Amrita CREATE, Amritapuri </em></p>
+            <p>
+            <ul>
+              <li>Led design for responsive, gamified platforms for emergency health workers and medical students;
+                managed wireframes, mockups, and prototypes.</li>
+              <li>Oversaw marketing collateral and multimedia asset projects, from design collaboration to vendor
+                negotiation and inventory management.
+              </li>
+              <li>Designed and submitted three product concepts with wireframes and "how-to-use" guides, as part of
+                a patent proposal; created mobile app screens for two NDA research projects, focusing on usability.</li>
+              <li>Designed a mobile app for student reading evaluation, used in schools by teachers and students.</li>
+              <li>Designed and developed VR interfaces for emergency health workers using Unity; ensured UI
+                consistency and trained teams on VR device usage and setup.</li>
+              <li>Created an AR proof-of-concept using Unity and Google AR Core.</li>
+              <li>Developed a 3D Unity simulation for a research grant project; collaborated on wireframing, testing,
+                and optimization.</li>
+            </ul>
+            </p>
+          </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>Dec. 2017 - Sep. 2018</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Programmer Analyst Trainee</span>
-                                    <br><small class="im-small">Cognizant Technology Solutions</small>
-                                    <br><small style="bottom: 0px;"> <i class="bi bi-geo-alt-fill"> Coimbatore &
-                                            Chennai,
-                                            India</i></small>
-                                </h3>
-                                <hr>
-                                <p>
-                                    <i class="bi bi-align-center"></i> Trained as an Automation Tester using Selenium &
-                                    Core Java along with MySQL
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i> Explored CITS (Cognizant Intelligent Test
-                                    Scripter) & TestNG to incorporate them in the SDLC process to expedite the
-                                    deliverables at the proper timeline
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i>
-                                    Responsibilities included creating End-to-End test scripts, Regression suits, and
-                                    scripts for Unit Testing.
+          <div class="resume-item">
+            <h4>Organizing Committee Member, EDT C20 India 2023</h4>
+            <h5>Jan/2023 - July/2023</h5>
+            <p><em>Amrita CREATE, Amritapuri</em></p>
+            <p>
+            <ul>
+              <li>Designed PowerPoint templates and graphical elements for webinars and events.</li>
+              <li>Managed layout decisions, storyboarding and content sequencing of print collateral and project
+                launch videos; formatted policy documents for usability.</li>
+              <li>Collaborated with a 50+ members team for C20 EDT Summit; coordinated live streams and virtual
+                participation; managed Zoom webinars for policy discussions ensuring smooth agenda adherence.</li>
+              <li>Represented the research center at C20 IHH Summit, showcasing VR medical project demos.</li>
+            </ul>
+            </p>
+          </div>
 
-                                </p>
-                            </div>
-                        </div>
+          <div class="resume-item">
+            <h4>Graphic Designer</h4>
+            <h5>Oct/2021 - Mar/2022</h5>
+            <p><em>Amrita CREATE, Amritapuri</em></p>
+            <p>
+            <ul>
+              <li>Led storyboarding and animation direction using Adobe After Effects; managed VFX, motion
+                graphics, and rendering.</li>
+              <li>Conducted media conversion with Adobe Media Encoder; performed video and audio editing in
+                Adobe Premiere Pro.</li>
+              <li>Designed infographics, icons, and brochures in Adobe Illustrator</li>
+            </ul>
+            </p>
+          </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>May 2017 - Present</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Freelancing</span>
-                                    <br><small class="im-small">Need help in anything ?</small>
-                                    <!-- <br><small style="bottom: 0px;"> <i class="bi bi-globe2"></i> Anywhere, You tell me</i></small> -->
-                                    <br><small class="im-small" style="bottom: 0px;"> <img src="./images/worldwide.svg"
-                                            width="16px" height="16px"> Anywhere, You tell me</small>
-                                </h3>
+          <div class="resume-item">
+            <h4>Senior Tester UX-UI</h4>
+            <h5>Sep/2019 - Aug/2021</h5>
+            <p><em>Etisalat by e&, Dubai</em></p>
+            <p>
+            <ul>
+              <li>Led UI/UX verification for key B2C products, including Etisalat's website and mobile apps.</li>
+              <li>Collaborated with cross-functional teams to enhance product design based on feedback and insights.
+              </li>
+              <li>Specialized in UI/UX validation for digitally transformed marketing products, aligning with
+                company standards.</li>
+              <li>Verified designs for a B2C SAS product, contributing to quality and user satisfaction.</li>
+              <li>Developed a Chrome Extension to automate test tracking and generate Daily Status Reports,
+                improving team efficiency.</li>
+            </ul>
+            </p>
+          </div>
 
-                            </div>
-                        </div>
+          <div class="resume-item">
+            <h4>UX Designer</h4>
+            <h5>Oct/2018 - Jul/2019</h5>
+            <p><em>Knowledge Lens, Bengaluru, India</em></p>
+            <p>
+            <ul>
+              <li>Implemented UX design using Design Thinking, collaborating cross-functionally with developers
+                and stakeholders.</li>
+              <li>Engaged with C-level stakeholders to enrich project insights and direction.
+              </li>
+              <li>Developed wireframes, prototypes, and high-fidelity mockups to support development efforts.</li>
+              <li>Designed promotional materials for social media branding and enhanced website visuals through
+                image optimization.</li>
+            </ul>
+            </p>
+          </div>
 
-                    </div>
-                </div>
+          <div class="resume-item">
+            <h4>Programmer Analyst Trainee</h4>
+            <h5>Dec/2017 - Sep/2018</h5>
+            <p><em>Cognizant, Coimbatore, India</em></p>
+            <p>
+            <ul>
+              <li>Trained in Automation Testing with Selenium, Core Java, and MySQL.</li>
+              <li>Utilized CITS (Cognizant Intelligent Test Scripter) and TestNG to streamline the SDLC process and
+                ensure timely project delivery.
+              </li>
+              <li>Managed end-to-end test scripts for regression and unit testing</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
 
-                <div class="col-lg-6 col-12">
-                    <h2 class="mb-4 mobile-mt-2">Educations</h2>
+    </div>
+  </section><!-- End Resume Section -->
 
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2020 - In Progress</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Applied Psychology (ODL)</span>
-                                    <br><small class="im-small">Master's Degree - M. Sc.</small>
-                                    <br><small style="bottom: 0px;"> <i class="bi bi-geo-alt-fill"> Annamalai
-                                            University, India</i></small>
-                                </h3>
-                                <hr>
-                                <p><i class="bi bi-align-center"></i> I've to write the exam only, but we can talk about
-                                    the issues that you are going through - if any, and if it's okay for you &#x1F917;
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>May 2013 - March 2017</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Computer Science & Eng. (Full-time)</span> &#x1F393; &#x1F4BB;
-                                    <br><small class="im-small">Bachelor's Degree - B. Tech.</small>
-                                    <br><small style="bottom: 0px;"> <i class="bi bi-geo-alt-fill"> Amrita Vishwa
-                                            Vidyapeetham University, India</i></small>
-                                </h3>
-                                <hr>
-                                <p>
-                                    <i class="bi bi-align-center"></i> I was curious and interested in designing
-                                    wire-frames, prototypes, and
-                                    mock-ups and develop websites and build Android applications.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i> I had an opportunity to participate in <b>Google
-                                        GDG Coimbatore</b>program sponsored by <b>Udacity</b> and developed an android
-                                    application that can calculate the <b>BMI</b>.
-                                    <br>
-                                    <a href="https://github.com/ajaygovinds/Udacity-Android-Application" target="_blank"
-                                        role="button" class="btn btn-primary btn-sm btn-dark github-btn"
-                                        style="margin-top: 8px;"><i class="bi bi-github"></i> Find it here</a>
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i> On many occasions, I had volunteered myself,
-                                    which was an excellent opportunity to
-                                    work as a team and co-ordinate among others.
-                                    <br><br>
-                                    <i class="bi bi-align-center"></i> I, along with my team, had developed an
-                                    <b>Accident Detection Alert System</b> as part of the final year project. We used
-                                    the technologies like <i>Accelerometer, Pressure Sensors, GPS Sensors, Arduino,
-                                        Google Maps API technology, Web Technologies like HTML and JavaScript, and OOPS
-                                        Technologies.</i>
-                                    <br><br>
 
-                                </p>
-                            </div>
-                        </div>
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>May 2013 - May 2012</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>K12 (Full-time)</span> &#x1F466;
-                                    <br><small class="im-small">Maths | Physics | Chemistry | Computer Science</small>
-                                    <br><small style="bottom: 0px;"> <i class="bi bi-geo-alt-fill"> Amrita Vidyalayam,
-                                            India</i></small>
-                                </h3>
-                                <hr>
-                                <p>
-                                    <i class="bi bi-align-center"></i> Well, I was a small boy and was never motivated
-                                    towards a furture with a job or some
-                                    title behind the name. All I could remember was, I was my school's <b>ASPL
-                                        (Assistant School Pupil Leader)</b> during my 11<sup>th</sup> grade, then played
-                                    hockey representing my school at the zonal level <b>twice</b>.
-                                    <br><br>
-                                    <span style="font-size: 14px;"><b>Fun Fact</b> - It was because of me there is a
-                                        hockey (&#x1F3D1;) team in my school now; I invented it &#x1F973;</span>
-                                </p>
-                            </div>
-                        </div>
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
 
-                    </div>
-                </div>
+      <p><i class="ri-information-fill" style="color: #949494;"></i><span style="margin-left: 5px;
+        font-size: 13px;
+        color: #d5d5d5;">As we explore these case studies, it's important to note the unique nature of our grant-based
+          projects. Due to compliance standards, explicit visual elements like wireframes and mockups can't be shared.
+          <br><br>
+          This discreet approach allows us to maintain project confidentiality while still sharing the essence of our
+          innovative endeavors. Your understanding is appreciated, and you're invited to witness the unfolding narrative
+          behind each project, including glimpses of brainstorming and possible rough sketches. Additionally, find
+          helpful links offering more insights about each project.</span></p>
 
+
+      <blockquote>
+        <strong>
+          <h5>Product Experience</h5>
+        </strong>
+        Almost every experience around you can be viewed through the lens of "Product Experience", and it all boils down
+        to one single thing: "empathy". Along the journey, skills can be learned, and when approached with a selfless
+        core perspective, things tend to fall into place at the right time.
+
+        <h3 style="margin-top: 20px;">👦🤔💭</h3>
+      </blockquote>
+
+
+      <!-- 2Cups ☕☕ -->
+      <div class="story">
+        <ul>
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h6 style="margin-bottom: 0px;">Two Cups of Connection: ☕ Brewing Empathy in Design</h6>
+            <p>
+              <span style="font-size: large; font-weight: bold; padding-top: 15px;">You can skip this story if you want
+                to
+                jump right into the case studies. 📚✨</span>
+              <br><br>
+              As I stood on the balcony, the gentle breeze playing with my hair, I found myself engaged in a
+              conversation
+              with a friend. The sun was beginning to set, casting a warm glow on the surroundings. We chose to sit
+              close to
+              the handrail, not directly facing each other, but diagonally positioned to share the beautiful view.
+              <br><br>
+              In the midst of our conversation, the thought of a coffee break crossed our minds. Without hesitation, my
+              friend (💃), decided to take charge. She disappeared for a moment and returned with a tray
+              bearing two steaming cups of coffee. As she approached, I couldn't help but appreciate the effort she put
+              into
+              ensuring our coffee break was perfect.
+              <br><br>
+              She (💃) extended the tray with precision, presenting two <b>identical cups of coffee</b>. What happened
+              next,
+              however, caught my attention and left me with a lesson that transcends this simple balcony encounter.
+              <br><br>
+              As I reached for my cup, I noticed something subtle yet profound. (💃), being the empathetic friend she
+              is,
+              had considered not only the direction I was facing but also my dominant hand. The handle of the cup she
+              offered was strategically positioned, facing towards me, knowing I was right-handed.
+              <br><br>
+              In that simple act, the narrative of empathy unfolded. It wasn't just about coffee; it was about
+              understanding
+              the needs of the other person. The subtle gesture reduced any cognitive load that might have come with
+              choosing a cup and provided a seamless experience.
+              <br><br>
+              This experience, seemingly mundane on a balcony, holds a powerful lesson applicable to various aspects of
+              life. It's a reminder that empathy can be the guiding force in creating better experiences, even beyond
+              the
+              realm of a simple coffee break. As a product designer, this resonates deeply with me - a reminder to
+              infuse
+              empathy into every design, reducing friction and enhancing the overall user experience. It's a philosophy
+              that
+              deserves its place not just in a coffee chat but also in the forefront of a designer's portfolio,
+              elevating it
+              above the tangible product case studies.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <br>
+
+      <div class="row portfolio-container">
+
+        <!-- 3D Simulation -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/3d-simulation.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="3d-simulation.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details">
+                  <p>Read Case Study</p>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="contact py-5" id="contact">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-5 mr-lg-5 col-12">
-                    <div class="google-map w-100">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7220.712093351017!2d55.259996520521604!3d25.19121267226193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f693e61a9ac45%3A0xc1e8d726e60822d5!2sEscape%20Tower!5e0!3m2!1sen!2sae!4v1625361449356!5m2!1sen!2sae"
-                            width="400" height="300" style="border:0;" allowfullscreen frameborder="0"
-                            loading="lazy"></iframe>
-
-                    </div>
-
-                    <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                        <div class="contact-info-item">
-                            <h3 class="mb-3 text-white">Say hello !</h3>
-                            <p class="footer-text mb-0">
-                                (+91) 9488-9494-70
-                                <br>
-                                (+971) 050-288-9693
-                            </p>
-                            <p><a href="mailto:ajaygovin@gmail.com" id="mail-me">ajaygovin@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-12">
-                    <div class="contact-form">
-                        <h2 class="mb-4">Interested to work together ?
-                            <br>Let's talk !
-                        </h2>
-                    </div>
-                    <div class="py-6 px-lg-5">
-                        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif"
-                            class="img-fluid rounded mx-auto d-block" alt="Responsive image" width="380px" />
-                    </div>
-                </div>
-
+        <!-- Web app -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/web-app.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="web-app.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details">
+                  <p>Read Case Study</p>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-                    <p class="copyright-text text-center"><b>Made with ❤️
-
-                            <script>document.write(new Date().getFullYear());
-                            </script>
-                        </b></p>
-                </div>
-
-                <div class="col-lg-12 col-12">
-                    <b>
-                        <div id="CounterVisitor text-center">
-                        </div>
-                    </b>
-                </div>
-                <script>
-                    var n = localStorage.getItem('on_load_counter');
-
-                    if (n === null) {
-                        n = 0;
-                    }
-                    n++;
-
-                    localStorage.setItem("on_load_counter", n);
-
-                    nums = n.toString().split('').map(Number);
-                    document.getElementById('CounterVisitor').innerHTML = '';
-                    for (var i of nums) {
-                        document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
-                    }
-
-                </script>
-
+        <!-- EDT C20 India 2023 -->
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/edt-c20.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="3d-simulation.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details">
+                  <p>Read Case Study</p>
+                </a>
+              </div>
             </div>
+          </div>
+        </div> -->
+
+        <!-- Mobile app -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/mobile-app.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="mobile-app.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details">
+                  <p>Read Case Study</p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
+        <!-- AR VR -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/ar-vr.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="ar-vr-app.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details">
+                  <p>Read Case Study</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+        <!-- 2 Cups -->
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/2cups.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="3d-simulation.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details">
+                  <p>Read Case Study</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
+
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- <div class="credits"> -->
+  <!-- All the links in the footer should remain intact. -->
+  <!-- You can delete the links only if you purchased the pro version. -->
+  <!-- Licensing information: https://bootstrapmade.com/license/ -->
+  <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+  <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+  <!-- </div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function calculateAge(birthYear) {
+      const currentYear = new Date().getFullYear();
+      return currentYear - birthYear;
+    }
+
+    const birthYear = 1995; // Replace with the desired birth year
+    const age = calculateAge(birthYear);
+
+    // Set the age value inside the span tag
+    document.getElementById('ageSpan').textContent = age - 1;
+  </script>
 
 </body>
 
