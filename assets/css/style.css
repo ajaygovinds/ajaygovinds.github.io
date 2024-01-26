@@ -39,7 +39,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background: #b58670;
+  /* background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); */
   left: 0;
   right: 0;
   top: 0;
@@ -54,12 +55,12 @@ body::before {
 }
 
 a {
-  color: #8aff5a;
+  color: #c5d55c;
   text-decoration: none;
 }
 
 a:hover {
-  color: #d0e835;
+  color: #fffa6a;
   text-decoration: none;
 }
 
@@ -690,7 +691,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #d21818;
+  color: #FFEB3B;
   margin-bottom: 10px;
 }
 
@@ -723,8 +724,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #d21818;
-  border: 2px solid #d21818;
+  background: #FFEB3B;
+  border: 2px solid #FFEB3B;
 }
 
 /*--------------------------------------------------------------
@@ -1301,10 +1302,10 @@ blockquote p {
 .skill-chip {
   margin: 0.5%;
   width: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
-  color: rgb(33 10 10);
-  background-color: #f7b523;
+  color: rgb(255, 255, 255);
+  background-color: #a37361;
   padding: 2px 8px;
   border-radius: 100px;
 }
@@ -1313,10 +1314,10 @@ blockquote p {
 .skill-chip-tool {
   margin: 0.5%;
   width: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
-  color: rgb(33 10 10);
-  background-color: #f72323;
+  color: rgb(255, 255, 255);
+  background-color: #c4600e;
   padding: 2px 8px;
   border-radius: 100px;
 }
