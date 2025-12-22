@@ -1,28 +1,30 @@
-# Welcome to My Journey! 👨‍💻🚀
+# Ajay Govind | Product Designer 🎨🚀
+> **v2.0 "System Node" Release**
 
-Hey there! 👋 I'm a B.Tech CSE graduate on a mission to blend technology with creativity. 🎓 Currently, I'm navigating the dynamic world of General Management and Leadership through my MBA journey. 🌐📚
+*"Strategy is about empathy."*
 
-## About Me
+Welcome to my digital portfolio. This repository hosts my personal website, showcasing my journey in **Product Design, AR/VR, and Leadership**.
 
-🔧 **Tech Enthusiast:** My roots lie in Computer Science, where I learned to code and explore the digital realm.
+## 🚀 About This Portfolio (v2.0)
+The website has been modernized with a **Futuristic / AI Interface** theme, featuring:
+- 🌌 **Cyberpunk/Sci-Fi Aesthetic**: Dark mode by default with neon accents.
+- 🌗 **Adaptive Theme System**: Integrated Sun/Moon toggle for "Lab Mode" (Light) switching.
+- 📱 **Mobile-First Consoles**: Responsive "App Shell" layout that works on all devices.
+- ⚡ **Direct Navigation**: High-speed transitions to detailed case studies.
 
-🎓 **Continuous Learner:** From B.Tech to MBA, my quest for knowledge knows no bounds. Lifelong learning is my mantra!
+## 🛠️ Tech Stack
+- **Core**: HTML5, Modern CSS3 (Variables, Grid, Flexbox).
+- **Style**: Custom "Futuristic" stylesheet (No heavy frameworks).
+- **Logic**: Vanilla JavaScript for theme state and lightweight interactions.
+- **Assets**: Optimized images and vector icons (Bootstrap Icons).
 
-🌟 **Product Designer in the Making:** As I embark on my professional journey, I'm honing my skills to craft meaningful and user-centric products.
+## 📂 Release History
+- **v2.0**: Current Release. Complete "Futuristic AI" overhaul.
+- **v1.0**: [Original Backup](original_portfolio_v1.zip). Bootstrap-based legacy version.
 
-## My Professional Quest
+## 🔗 Connect
+- **LinkedIn**: [Ajay Govind S](https://www.linkedin.com/in/ajay-govind-s/)
+- **Behance**: [Ajay Govind](https://www.behance.net/ajay_govind_s)
 
-🚀 **Pursuing Excellence:** My goal is to excel in the intersection of technology, design, and leadership.
-
-🌈 **Creativity Unleashed:** As a product designer, I'm passionate about turning ideas into visually stunning and functional realities.
-
-🌐 **Global Mindset:** My MBA in General Management equips me with a holistic view to navigate the complexities of the business world.
-
-## Let's Connect!
-
-📫 **Reach Out:** Excited about collaboration or just want to chat? Feel free to reach out. Let's create something amazing together! 🤝
-
-**Stay tuned for updates as I transform aspirations into achievements! 🌟✨**
-
-Cheers,
-Ajay Govind 🚀
+---
+*Designed with 💚 and a limitless passion for innovation.*
