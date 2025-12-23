@@ -1,30 +1,44 @@
-# Ajay Govind | Product Designer 🎨🚀
-> **v2.0 "System Node" Release**
+# Ajay Govind S | Product & Project Management Professional 👨‍💻🚀
 
-*"Strategy is about empathy."*
+Welcome to my portfolio! I am a **Product and Project Management professional with 7+ years of experience** delivering digital solutions across healthcare, ed-tech, immersive tech, AI, HCI, and telecom. My journey blends technical engineering roots with strategic business leadership.
 
-Welcome to my digital portfolio. This repository hosts my personal website, showcasing my journey in **Product Design, AR/VR, and Leadership**.
+## 🌟 Professional Status: [SYSTEM_ONLINE]
+**Immediately Available to Join** | MBA Graduate | PMP Aspirant
 
-## 🚀 About This Portfolio (v2.0)
-The website has been modernized with a **Futuristic / AI Interface** theme, featuring:
-- 🌌 **Cyberpunk/Sci-Fi Aesthetic**: Dark mode by default with neon accents.
-- 🌗 **Adaptive Theme System**: Integrated Sun/Moon toggle for "Lab Mode" (Light) switching.
-- 📱 **Mobile-First Consoles**: Responsive "App Shell" layout that works on all devices.
-- ⚡ **Direct Navigation**: High-speed transitions to detailed case studies.
+## 🛠️ Tech Meets Leadership
+My professional quest lies at the intersection of **Technology, Design, and Strategic Leadership**. With a background in Computer Science and an MBA in General Management, I bridge the gap between complex engineering needs and user-centric business goals.
 
-## 🛠️ Tech Stack
-- **Core**: HTML5, Modern CSS3 (Variables, Grid, Flexbox).
-- **Style**: Custom "Futuristic" stylesheet (No heavy frameworks).
-- **Logic**: Vanilla JavaScript for theme state and lightweight interactions.
-- **Assets**: Optimized images and vector icons (Bootstrap Icons).
+### **Core Expertise**
+- **Product Management**: Strategy, Execution, and Delivery 💚
+- **Agile Leadership**: Scrum Master, PO roles, and Hybrid methods across 5+ product teams.
+- **Experience Design**: 7+ years of UX/UI verification and design (Etisalat, Knowledge Lens).
+- **Emerging Tech**: Delivering VR/AR applications and 3D simulations.
 
-## 📂 Release History
-- **v2.0**: Current Release. Complete "Futuristic AI" overhaul.
-- **v1.0**: [Original Backup](original_portfolio_v1.zip). Bootstrap-based legacy version.
+## 🎓 Education & Background
+- **MBA (General Management)**: Amrita Vishwa Vidyapeetham (2021 - 2024)
+- **B.Tech (Computer Science Engineering)**: Amrita Vishwa Vidyapeetham (2013 - 2017)
 
-## 🔗 Connect
-- **LinkedIn**: [Ajay Govind S](https://www.linkedin.com/in/ajay-govind-s/)
-- **Behance**: [Ajay Govind](https://www.behance.net/ajay_govind_s)
+## 🌐 Impact & Leadership
+- **G20 India 2023 (C20)**: Organizing Committee Member – Education & Digital Transformation Working Group.
+- **Project Portfolios**: Led end-to-end delivery for projects with combined funding exceeding **USD 100 million** (USAID, RISE, MeitY).
+- **Global Mindset**: Experienced in delivering digital products for international markets, including Dubai (Etisalat UAE).
+
+## 🗃️ Selected Case Studies
+Check out my latest interactive projects:
+- **3D Simulation**: Immersive interactive learning.
+- **Web Application**: Advanced UX Dashboards.
+- **Mobile App Revamp**: Product lifecycle and sprint-based delivery.
+- **AR/VR Applications**: Immersive reality for healthcare and education.
+
+## 📫 Let's Connect!
+Excited about collaboration or just want to chat?
+- **LinkedIn**: [ajay-govind-s](https://www.linkedin.com/in/ajay-govind-s/)
+- **Behance**: [ajay_govind_s](https://www.behance.net/ajay_govind_s)
+- **Email**: [ajaygovin@gmail.com](mailto:ajaygovin@gmail.com)
 
 ---
-*Designed with 💚 and a limitless passion for innovation.*
+
+*Stay tuned as I continue to transform aspirations into achievements! 🌟✨*
+
+Cheers,
+**Ajay Govind S** 🚀
