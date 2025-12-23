@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>System Node | Ajay Govind</title>
-  
+
+  <script>
+    // Immediate Theme Detection to prevent flash
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+
   <link rel="shortcut icon" type="image/jpg" href="./assets/img/beard.svg" />
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.futuristic.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -19,10 +32,12 @@
 <body>
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-brand"><a href="index.html"><i class="bi bi-arrow-left"></i> RETURN_HOME</a></div>
-       <button id="themeToggle" class="theme-toggle">
-          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
-        </button>
+      <div class="nav-brand"><a href="index.html#portfolio"
+          onclick="sessionStorage.setItem('returnFromProject', 'true')"><i class="bi bi-arrow-left"></i> RETURN_HOME</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+      </button>
     </div>
   </nav>
 
@@ -33,178 +48,227 @@
 
 
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
-      <div class="container">
+        <!-- ======= Portfolio Details ======= -->
+        <div id="portfolio-details" class="portfolio-details">
+          <div class="container">
 
-        <div class="row justify-content-lg-center">
+            <div class="row justify-content-lg-center">
 
-          <div class="col-lg-10">
-            <h2 class="portfolio-title">ALP mobile app : A UX-UI Transformation Story ✨</h2>
-            <p><i class="ri-information-fill" style="color: #949494;"></i><span style="margin-left: 5px;
+              <div class="col-lg-10">
+                <h2 class="portfolio-title">ALP mobile app : A UX-UI Transformation Story ✨</h2>
+                <p><i class="ri-information-fill" style="color: #949494;"></i><span style="margin-left: 5px;
             font-size: 13px;
             color: #949494;">Access Alert: Some content may trigger a 403 error due to access rules. Please try opening
-                in private mode if needed.</span></p>
-          </div>
+                    in private mode if needed.</span></p>
+              </div>
 
-          <div class="col-lg-10 portfolio-info">
-            <!-- Introduction -->
-            <h3>Introduction</h3>
-            <p>
-              Picture a classroom where language learning isn't confined to textbooks and rote memorization but unfolds
-              as a dynamic, collaborative adventure. ALP, a mobile application, tailored to make language exploration
-              engaging and effective, fostering a joyful journey for students as they build their speaking skills.
-            </p>
+              <div class="col-lg-10 portfolio-info">
+                <!-- Introduction -->
+                <h3>Introduction</h3>
+                <p>
+                  Picture a classroom where language learning isn't confined to textbooks and rote memorization but
+                  unfolds
+                  as a dynamic, collaborative adventure. ALP, a mobile application, tailored to make language
+                  exploration
+                  engaging and effective, fostering a joyful journey for students as they build their speaking skills.
+                </p>
 
-            <br><br>
+                <br><br>
 
-            <!-- Objective -->
-            <h3>Objective</h3>
-            <p>
-              When I started to collaborate with the ALP team, the app was already in development, but the absence of a
-              dedicated UX-UI Designer had left a gap. Recognizing the opportunity to enhance user experience, I dove
-              into the project headfirst. My design objective became crystal clear:
+                <!-- Objective -->
+                <h3>Objective</h3>
+                <p>
+                  When I started to collaborate with the ALP team, the app was already in development, but the absence
+                  of a
+                  dedicated UX-UI Designer had left a gap. Recognizing the opportunity to enhance user experience, I
+                  dove
+                  into the project headfirst. My design objective became crystal clear:
 
-              <br><br>
+                  <br><br>
 
-            <h6><b style="text-decoration: underline;">Revamping the User Journey:</b></h6> Entering the scene, my
-            mission was to revolutionize the user
-            interface
-            and experience. Guided by simplicity, I led the team through a comprehensive redesign of all screens,
-            streamlining navigation, simplifying colors, and reimagining layouts.
-            </p>
+                <h6><b style="text-decoration: underline;">Revamping the User Journey:</b></h6> Entering the scene, my
+                mission was to revolutionize the user
+                interface
+                and experience. Guided by simplicity, I led the team through a comprehensive redesign of all screens,
+                streamlining navigation, simplifying colors, and reimagining layouts.
+                </p>
 
-            <br><br>
+                <br><br>
 
-            <!-- Team Composition -->
-            <h3>Team Composition</h3>
-            <ul>
-              <li>Project Coordinator</li>
-              <li>ALP Team</li>
-              <li>Development Team</li>
-              <li>Testing Team</li>
-              <li>Multimedia Team</li>
-              <li><strong>Ajay Govind 🙋‍♂️ as UX-UI Designer</strong></li>
-            </ul>
-            <p>It was heartening to witness the team's openness in acknowledging the gap. Together, we embarked on a
-              journey of brainstorming, wireframing, creating mockups, and finally, development.</p>
-            <br><br>
+                <!-- Team Composition -->
+                <h3>Team Composition</h3>
+                <ul>
+                  <li>Project Coordinator</li>
+                  <li>ALP Team</li>
+                  <li>Development Team</li>
+                  <li>Testing Team</li>
+                  <li>Multimedia Team</li>
+                  <li><strong>Ajay Govind 🙋‍♂️ as UX-UI Designer</strong></li>
+                </ul>
+                <p>It was heartening to witness the team's openness in acknowledging the gap. Together, we embarked on a
+                  journey of brainstorming, wireframing, creating mockups, and finally, development.</p>
+                <br><br>
 
-            <!-- Research & Discovery -->
-            <h3>Research & Discovery: Navigating the Unknown Terrain</h3>
-            <p>
-              Joining the team at an advanced stage of development presented a unique challenge - there were no
-              documents, and I had no prior insights into the app. The project had been sailing in what seemed like a
-              hyper-agile manner - requirements communicated verbally, timelines set, and the end result, unfortunately,
-              was a less-than-stellar app.
-              <br><br>
-              Upon my arrival, the first task was unraveling the app's primary purpose. It was supposed to cater to both
-              teachers and students, with teachers for evaluation and students for learning. However, the specifics were
-              murky.
-              <br><br>
-              Navigating through the existing maze of screens, we discovered redundancy and uncharted territories.
-              Prioritizing screens became a puzzle to solve. We delved into questions: What visual elements were
-              necessary? Did we need sounds and animations for our young audience? Additionally, considering it was
-              meant for small children in schools, the choice of fonts and colors became crucial.
-              <br><br>
-              Through this exploration, we not only clarified the app's purpose but also streamlined its structure and
-              identified essential design elements, ensuring a more focused and purposeful development path.
-            </p>
+                <!-- Research & Discovery -->
+                <h3>Research & Discovery: Navigating the Unknown Terrain</h3>
+                <p>
+                  Joining the team at an advanced stage of development presented a unique challenge - there were no
+                  documents, and I had no prior insights into the app. The project had been sailing in what seemed like
+                  a
+                  hyper-agile manner - requirements communicated verbally, timelines set, and the end result,
+                  unfortunately,
+                  was a less-than-stellar app.
+                  <br><br>
+                  Upon my arrival, the first task was unraveling the app's primary purpose. It was supposed to cater to
+                  both
+                  teachers and students, with teachers for evaluation and students for learning. However, the specifics
+                  were
+                  murky.
+                  <br><br>
+                  Navigating through the existing maze of screens, we discovered redundancy and uncharted territories.
+                  Prioritizing screens became a puzzle to solve. We delved into questions: What visual elements were
+                  necessary? Did we need sounds and animations for our young audience? Additionally, considering it was
+                  meant for small children in schools, the choice of fonts and colors became crucial.
+                  <br><br>
+                  Through this exploration, we not only clarified the app's purpose but also streamlined its structure
+                  and
+                  identified essential design elements, ensuring a more focused and purposeful development path.
+                </p>
 
-            <!-- Attachments -->
-            <div class="col-lg-10 portfolio-item filter-web">
-              <div class="portfolio-wrap" style="align-content: flex-start;
+                <!-- Attachments -->
+                <div class="col-lg-10 portfolio-item filter-web">
+                  <div class="portfolio-wrap" style="align-content: flex-start;
               align-items: center;
               justify-content: space-evenly;
               display: flex;
               flex-wrap: wrap;
               flex-direction: row;">
-                <img src="portfolio/mobile-app/MA1.png" alt="wireframe-01" style="margin: 2%;
+                    <img src="portfolio/mobile-app/MA1.png" alt="wireframe-01" style="margin: 2%;
                 max-width: 45%;
                 height: auto;">
-                <img src="portfolio/mobile-app/MA2.png" alt="wireframe-02" style="margin: 2%;
+                    <img src="portfolio/mobile-app/MA2.png" alt="wireframe-02" style="margin: 2%;
                 max-width: 45%;
                 height: auto;">
-                <img src="portfolio/mobile-app/MA3.png" alt="wireframe-03" style="margin: 2%;
+                    <img src="portfolio/mobile-app/MA3.png" alt="wireframe-03" style="margin: 2%;
                 max-width: 45%;
                 height: auto;">
-                <img src="portfolio/mobile-app/MA4.png" alt="wireframe-04" style="margin: 2%;
+                    <img src="portfolio/mobile-app/MA4.png" alt="wireframe-04" style="margin: 2%;
                 max-width: 45%;
                 height: auto;">
+                  </div>
+                </div>
+
+                <br><br>
+
+                <!-- Ideation & Design Process -->
+                <h3>Ideation & Design Process: Crafting Clarity from Chaos</h3>
+                <p>With no solid mockups as my starting point, the ideation and design process unfolded as a journey of
+                  simplicity and collaboration. Here's how we transformed chaos into clarity:
+                  <br><br>
+                <h6><b style="text-decoration: underline;">Brainstorming the Blueprint:</b></h6> Our first step involved
+                collective brainstorming sessions. We discussed ideas, I presented wireframes, and we identified visual
+                and
+                audio essentials. This laid the groundwork for what the app would eventually become.
+                <br><br>
+                <h6><b style="text-decoration: underline;">From Concept to Canvas:</b></h6> As the design started taking
+                shape, I collaborated with the multimedia team to weave graphical visuals and sound elements seamlessly
+                into
+                the user experience. The ongoing collaboration ensured a harmonious blend of design and multimedia
+                elements.
+                <br><br>
+                <h6><b style="text-decoration: underline;">Crafting the User Journey:</b></h6> The user journey emerged
+                as
+                the guiding thread, weaving together wireframes, mockups, and multimedia elements into a cohesive whole.
+                Weekly meetings became our design canvas, where I presented, received evaluations, iterated if needed,
+                and
+                moved closer to the final vision.
+                <br><br>
+                <h6><b style="text-decoration: underline;">Iterative Refinement:</b></h6> The design process evolved
+                into a
+                smooth rhythm. Each week brought refinement. It was a dance of ideas, evaluations, and iterations,
+                making
+                the design progressively robust.
+                <br><br>
+                <h6><b style="text-decoration: underline;">Developer Handover and Beyond:</b></h6> Upon design approval,
+                the
+                torch passed to the developers. The iterative cycle continued as we collaborated closely, ensuring a
+                seamless transition from design to development.
+                </p>
+
+                <br><br>
+
+                <!-- Conclusion -->
+                <h3>Conclusion</h3>
+                <p>As I pen down this case study, the culmination of our efforts is approaching. The app is tentatively
+                  scheduled for a pilot release in the first week of February 2024, a testament to the collaborative
+                  journey
+                  from chaos to a well-crafted digital solution.
+                </p>
               </div>
+
             </div>
 
-            <br><br>
-
-            <!-- Ideation & Design Process -->
-            <h3>Ideation & Design Process: Crafting Clarity from Chaos</h3>
-            <p>With no solid mockups as my starting point, the ideation and design process unfolded as a journey of
-              simplicity and collaboration. Here's how we transformed chaos into clarity:
-              <br><br>
-            <h6><b style="text-decoration: underline;">Brainstorming the Blueprint:</b></h6> Our first step involved
-            collective brainstorming sessions. We discussed ideas, I presented wireframes, and we identified visual and
-            audio essentials. This laid the groundwork for what the app would eventually become.
-            <br><br>
-            <h6><b style="text-decoration: underline;">From Concept to Canvas:</b></h6> As the design started taking
-            shape, I collaborated with the multimedia team to weave graphical visuals and sound elements seamlessly into
-            the user experience. The ongoing collaboration ensured a harmonious blend of design and multimedia elements.
-            <br><br>
-            <h6><b style="text-decoration: underline;">Crafting the User Journey:</b></h6> The user journey emerged as
-            the guiding thread, weaving together wireframes, mockups, and multimedia elements into a cohesive whole.
-            Weekly meetings became our design canvas, where I presented, received evaluations, iterated if needed, and
-            moved closer to the final vision.
-            <br><br>
-            <h6><b style="text-decoration: underline;">Iterative Refinement:</b></h6> The design process evolved into a
-            smooth rhythm. Each week brought refinement. It was a dance of ideas, evaluations, and iterations, making
-            the design progressively robust.
-            <br><br>
-            <h6><b style="text-decoration: underline;">Developer Handover and Beyond:</b></h6> Upon design approval, the
-            torch passed to the developers. The iterative cycle continued as we collaborated closely, ensuring a
-            seamless transition from design to development.
-            </p>
-
-            <br><br>
-
-            <!-- Conclusion -->
-            <h3>Conclusion</h3>
-            <p>As I pen down this case study, the culmination of our efforts is approaching. The app is tentatively
-              scheduled for a pilot release in the first week of February 2024, a testament to the collaborative journey
-              from chaos to a well-crafted digital solution.
-            </p>
           </div>
+        </div><!-- End Portfolio Details -->
 
-        </div>
 
-      </div>
-    </div><!-- End Portfolio Details -->
 
-  
-      
-      
+
       </section>
     </main>
-    <footer style="text-align: center; color: var(--text-secondary); margin-top: 3rem; font-family: var(--font-mono); font-size: 0.8rem;">
-      SYSTEM_ID: Portfolio_v2.0 // © 2024 AJAY GOVIND
+    <footer
+      style="text-align: center; color: var(--text-secondary); margin-top: 3rem; font-family: var(--font-mono); font-size: 0.8rem;">
+      SYSTEM_ID: Portfolio_v2.0 // © <span id="currentYear"></span> AJAY GOVIND
     </footer>
   </div>
-  
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script>
     const lightbox = GLightbox({ selector: '.glightbox' });
-    
+
+    // Set current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
     // Theme Toggle (Simplified for subpages)
     const toggleBtn = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
     const body = document.body;
-    
+
+    // Set initial icon state based on class applied in <head>
+    if (document.documentElement.classList.contains('light-theme')) {
+      themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+    }
+
     toggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-theme');
-        if (body.classList.contains('light-theme')) {
-            themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
-        } else {
-            themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
-        }
+      const isLight = document.documentElement.classList.toggle('light-theme');
+      if (isLight) {
+        themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Back to Top Button Logic
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
+
 </html>

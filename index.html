@@ -4,7 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ajay Govind | Product Designer</title>
+  <title>Ajay Govind | Product & Project Management</title>
+
+  <script>
+    // Immediate Theme Detection to prevent flash
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
   <meta
     content="Explore my diverse portfolio, featuring impactful projects with innovation and thoughtful problem-solving. 🌐✨"
     name="description">
@@ -23,6 +33,25 @@
 
   <!-- CSS Theme -->
   <link href="assets/css/style.futuristic.css" rel="stylesheet">
+  <style>
+    /* Responsive Logo Handling */
+    .responsive-logo {
+      height: 40px;
+      width: auto;
+      max-width: 120px;
+      border-radius: 4px;
+      object-fit: contain;
+      background: white;
+    }
+
+    /* Mobile adjustments: Smaller logos */
+    @media (max-width: 768px) {
+      .responsive-logo {
+        height: 32px;
+        max-width: 100px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -30,20 +59,20 @@
   <!-- HUD Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-brand">AG_S</div>
+      <div class="nav-brand"><a href="index.html">AG_S</a></div>
 
       <div class="nav-right">
         <div class="nav-links">
           <a href="#about" class="nav-item">/ABOUT</a>
           <a href="#resume" class="nav-item">/RESUME</a>
-          <a href="#portfolio" class="nav-item">/PROJECTS</a>
+          <a href="#portfolio" class="nav-item">/CASE STUDIES</a>
         </div>
-
-        <!-- Theme Toggle -->
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
-          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
-        </button>
       </div>
+
+      <!-- Theme Toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+      </button>
     </div>
   </nav>
 
@@ -53,12 +82,30 @@
     <section class="hero">
       <div class="hero-avatar-container">
         <img src="assets/img/me.png" alt="Ajay Govind" class="hero-avatar">
+        <div class="availability-badge">
+          <span class="status-dot"></span>
+          <span>IMMEDIATELY AVAILABLE TO JOIN</span>
+        </div>
       </div>
 
       <h1 class="hero-title">Ajay Govind S</h1>
-      <div class="indian-badge">
-        <span>𝗦𝗲𝗮𝘀𝗼𝗻𝗲𝗱 𝗣𝗿𝗼𝗱𝘂𝗰𝘁</span> from <span class="flag-in">IN</span><span
+      <div class="indian-badge" style="max-width: 480px; line-height: 1.6;">
+        <span>Product & Project Management Professional • 7+ YOE • MBA • PMP Aspirant • Soft Leadership • Organizing
+          Committee
+          Member–C20 EDT WG, G20 India 2023</span> from <span class="flag-in">IN</span><span
           class="flag-d">D</span><span class="flag-ia">IA</span>
+      </div>
+
+      <div style="font-family: var(--font-mono); font-size: 0.9rem; text-align: center; margin: 1.5rem 0;">
+        <div style="margin-bottom: 0.5rem;">
+          <span style="color: var(--accent-secondary);">LOCATION:</span> Coimbatore, India
+        </div>
+        <div style="margin-bottom: 0.5rem;">
+          <span style="color: var(--accent-secondary);">CONTACT:</span> +91 9488949470 | ajaygovin@gmail.com
+        </div>
+        <div>
+          <span style="color: var(--accent-secondary);">LANGUAGES:</span> English | Malayalam | Tamil
+        </div>
       </div>
 
       <div class="social-bar">
@@ -86,7 +133,7 @@
           <h2 class="section-title">System Status: Online</h2>
         </div>
 
-        <div class="about-split">
+        <div class="about-content">
           <div>
             <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Product & Project Management | Strategy, Execution,
               Delivery 💚</h3>
@@ -164,18 +211,6 @@
               </div>
             </div>
           </div>
-
-          <div style="font-family: var(--font-mono); font-size: 0.9rem;">
-            <div style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
-              <span style="color: var(--accent-secondary);">LOCATION:</span><br>Coimbatore, India
-            </div>
-            <div style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
-              <span style="color: var(--accent-secondary);">CONTACT:</span><br>+91 9488949470<br>ajaygovin@gmail.com
-            </div>
-            <div>
-              <span style="color: var(--accent-secondary);">LANGUAGES:</span><br>English | Malayalam | Tamil
-            </div>
-          </div>
         </div>
       </section>
 
@@ -187,173 +222,336 @@
         </div>
 
         <div class="timeline-node">
-          <div class="timeline-role">Project Engineer</div>
-          <span class="timeline-company">The Amrita Center for Research in Analytics, Technologies & Education
-            (AmritaCREATE) | Apr 2022 - Dec 2024</span>
-          <div class="timeline-content">
-            <ul>
-              <li><b>Managed</b> a cross-functional team of 3 developers, 2 testers, and a research associate, and
-                oversaw stakeholder communication and product development from inception to implementation in revamping
-                the mobile application—<b>redesigned</b> and <b>successfully</b> launched the revamped version (v2) in 5
-                sprints (10-day sprints).</li>
-              <li><b>Acted as a liaison</b> between stakeholders, conducting timely follow-ups, prioritizing tasks, and
-                integrating appropriate development features into the application while balancing stakeholder needs and
-                project deadlines.</li>
-              <li><b>Implemented</b> the Agile Scrum framework as a change management initiative by defining product
-                roadmaps, writing user stories, and conducting Scrum ceremonies while managing the project and following
-                a Kanban board using Azure Boards.</li>
-              <li><b>Designed and Managed end-to-end</b> responsive web application by maintaining wireframes, mockups,
-                and prototypes — <b>Acted as a liaison</b> between the client, development team, medical SMEs, and
-                multimedia team for requirements gathering and translated it into features while assessing the
-                feasibility of development.</li>
-              <li><b>Designed and Developed</b> highly engaging User Interfaces for Virtual Reality (VR) applications
-                using Unity 3D, delivering immersive experiences and ensuring optimal performance.</li>
-              <li><b>Designed and Oversaw VR Demo Stalls</b> and conducted training sessions for students, doctors, and
-                practitioners during conferences and review sessions from August 2023 to June 2024. Enhanced engagement
-                and educational experience through interactive VR demonstrations at medical colleges.</li>
-              <li><b>Designed and Developed</b> a 3D simulation for a simple pendulum physics experiment using Unity 3D
-                and WebGL technology, creating an interactive and educational tool for web-based learning.</li>
-              <li><b>Managed data and coordinated projects</b>, recruiting participants for educational initiatives, and
-                mentoring faculty, colleagues, and medical students on immersive reality device usage.</li>
-              <li><b>Delivered training sessions</b>, ensuring effective knowledge dissemination, and assisting
-                international delegates with research studies conducted at the company.</li>
-              <li><b>Represented the company</b> at national meetups and project review presentations, showcasing
-                project achievements and fostering industry connections.</li>
-              <li><b>Estimated projects</b>, planned resources, hired as needed, and monitored execution, ensuring
-                optimal resource management and team assignments.</li>
-              <li><b>Provided ideas for project execution</b> to enhance operational excellence, conducted product
-                demos, interfaced with clients, doctors, nurses, and incorporated their feedback.</li>
-              <li><b>Crafted patent illustrations</b> and managed documents for clarity, consistency, and accessibility,
-                supporting effective project documentation and communication.</li>
-            </ul>
+          <!-- Company Header -->
+          <div class="timeline-role"
+            style="font-size: 1.3rem; margin-bottom: 0.2rem; display: flex; align-items: center; gap: 12px;">
+            <img src="assets/img/logos/amrita.jpeg" alt="Amrita Logo" class="responsive-logo">
+            Amrita Vishwa Vidyapeetham
           </div>
-        </div>
+          <span class="timeline-company" style="font-size: 0.9rem; opacity: 0.8;">Full-time · 4 yrs 2 mos</span>
 
-        <div class="timeline-node">
-          <div class="timeline-role">Graphic Designer</div>
-          <span class="timeline-company">AmritaCREATE | Oct 2021 - Mar 2022</span>
-          <div class="timeline-content">
-            <ul>
-              <li><b>Directed</b> storyboarding, animation, VFX, motion graphics, and video/audio editing, while
-                overseeing design of infographics and print collateral using Adobe Creative Suite, and managing
-                collaborations with design teams and vendors.</li>
-            </ul>
+          <!-- Product Engineer -->
+          <div
+            style="margin-top: 1.5rem; margin-left: 0.5rem; border-left: 2px solid rgba(var(--accent-primary-rgb), 0.3); padding-left: 1.2rem;">
+            <div class="timeline-role" style="font-size: 1.1rem;">Product Engineer</div>
+            <span class="timeline-company">Jan 2025 - Nov 2025 · 11 mos</span>
+            <div style="margin-top: 0.25rem;">
+              <span class="skill-tag"
+                style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(var(--accent-primary-rgb), 0.1); border: 1px solid rgba(var(--accent-primary-rgb), 0.2);">
+                <i class="bi bi-geo-alt-fill" style="margin-right: 3px;"></i> Kollam, Kerala, India
+              </span>
+            </div>
+            <div style="margin-top: 0.5rem; font-style: italic; font-size: 0.9rem; color: var(--text-secondary);">
+              Center: Centre for Internet Studies and Artificial Intelligence (CISAI)
+            </div>
+            <div class="timeline-content" style="margin-top: 0.5rem;">
+              <ul>
+                <li><b>Delivered</b> Metabase dashboards for Redmine, enabling analytics across 5+ product teams.</li>
+                <li><b>Reduced</b> ticket resolution time by 30%, setting KPIs for handling an avg. of 5 tickets per day
+                  balancing development & testing.</li>
+                <li><b>Onboarded</b> IT, SOC, Deployment and Maintenance teams along with their Leads (35+ members) to
+                  OpenProject, digitizing effort tracking, enabling monitoring, and reducing slippages.</li>
+                <li><b>Coached</b> a 10-member product team into Agile roles (PO, Scrum Master), boosting delivery
+                  ownership.</li>
+                <li><b>Implemented</b> change management in ticket workflows, drafting SOPs and driving adoption.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project Engineer -->
+          <div
+            style="margin-top: 2rem; margin-left: 0.5rem; border-left: 2px solid rgba(var(--accent-primary-rgb), 0.3); padding-left: 1.2rem;">
+            <div class="timeline-role" style="font-size: 1.1rem;">Project Engineer</div>
+            <span class="timeline-company">Apr 2022 - Dec 2024 · 2 yrs 9 mos</span>
+            <div style="margin-top: 0.25rem;">
+              <span class="skill-tag"
+                style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(var(--accent-primary-rgb), 0.1); border: 1px solid rgba(var(--accent-primary-rgb), 0.2);">
+                <i class="bi bi-geo-alt-fill" style="margin-right: 3px;"></i> Kollam, Kerala, India
+              </span>
+            </div>
+            <div style="margin-top: 0.5rem; font-style: italic; font-size: 0.9rem; color: var(--text-secondary);">
+              Center: The Amrita Center for Research in Analytics, Technologies & Education (CREATE)
+            </div>
+            <div class="timeline-content" style="margin-top: 0.5rem;">
+              <ul>
+                <li><b>Managed</b> a cross-functional team of 6, overseeing stakeholder communication and product
+                  development, from inception to a successful launch of a revamped mobile app in 5 sprints.</li>
+                <li><b>Acted as a liaison</b> between stakeholders, conducting follow-ups, prioritizing tasks, and
+                  integrating development features to balance stakeholder needs and project deadlines.</li>
+                <li><b>Implemented</b> the Agile Scrum framework, defining product roadmaps, writing user stories, and
+                  conducting Scrum ceremonies while managing projects using Azure Boards.</li>
+                <li><b>Designed and managed</b> end-to-end responsive web applications for—4 healthcare projects—from
+                  wireframe to prototypes, coordinating between clients, development teams, doctors, SMEs, and
+                  multimedia
+                  teams.</li>
+                <li><b>Developed</b> highly engaging UI for VR applications and a 3D simulation using Unity 3D and
+                  WebGL,
+                  ensuring immersive experiences and optimal performance.</li>
+                <li><b>Designed and oversaw</b> VR demo stalls and conducted training sessions for students, doctors,
+                  and
+                  practitioners, enhancing educational experiences through interactive VR demonstrations.</li>
+              </ul>
+              <div style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: bold; font-size: 0.9rem;">Research
+                Center Activities:</div>
+              <ul>
+                <li><b>Managed data</b> and coordinated projects, recruiting participants and mentoring faculty,
+                  colleagues, and students on immersive reality device usage.</li>
+                <li><b>Delivered</b> training sessions, and assisted international delegates with research studies
+                  conducted at the company.</li>
+                <li><b>Represented</b> the company at national meetups and project review presentations, showcasing
+                  achievements and building industry connections.</li>
+                <li><b>Estimated</b> projects, planned resources, hired staff, and monitored project execution, ensuring
+                  optimal resource management and team assignments.</li>
+                <li><b>Crafted</b> patent illustrations and managed documentation for clarity, consistency, and
+                  accessibility, supporting effective project communication.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Graphic Designer -->
+          <div
+            style="margin-top: 2rem; margin-left: 0.5rem; border-left: 2px solid rgba(var(--accent-primary-rgb), 0.3); padding-left: 1.2rem;">
+            <div class="timeline-role" style="font-size: 1.1rem;">Graphic Designer</div>
+            <span class="timeline-company">Oct 2021 - Mar 2022 · 6 mos</span>
+            <div style="margin-top: 0.25rem;">
+              <span class="skill-tag"
+                style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(var(--accent-primary-rgb), 0.1); border: 1px solid rgba(var(--accent-primary-rgb), 0.2);">
+                <i class="bi bi-geo-alt-fill" style="margin-right: 3px;"></i> Hybrid
+              </span>
+            </div>
+            <div style="margin-top: 0.5rem; font-style: italic; font-size: 0.9rem; color: var(--text-secondary);">
+              Center: The Amrita Center for Research in Analytics, Technologies & Education (CREATE)
+            </div>
+            <div class="timeline-content" style="margin-top: 0.5rem;">
+              <ul>
+                <li><b>Led</b> storyboarding efforts, directing a team of animators to create drawings; executed VFX
+                  editing, motion graphics, and rendering using Adobe After Effects.</li>
+                <li><b>Conducted</b> media conversion tasks using Adobe Media Encoder.</li>
+                <li><b>Managed</b> video and audio editing, manipulation, and rendering using Adobe Premiere Pro.</li>
+                <li><b>Designed</b> infographics, icons, and graphical elements using Adobe Illustrator; created
+                  research
+                  project brochures.</li>
+                <li><b>Developed</b> and formatted PowerPoint presentation templates, ensuring consistency and visual
+                  appeal in slide designs.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="timeline-node">
           <div class="timeline-role">Senior Tester UX-UI</div>
-          <span class="timeline-company">Etisalat by e&, Dubai | Sep 2019 - Aug 2021</span>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/etisalat.jpeg" alt="Etisalat Logo" class="responsive-logo">
+            <span>Etisalat | Sep 2019 - Aug 2021 · 2 yrs</span>
+          </div>
+          <div style="margin-top: 0.25rem;">
+            <span class="skill-tag"
+              style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(var(--accent-primary-rgb), 0.1); border: 1px solid rgba(var(--accent-primary-rgb), 0.2);">
+              <i class="bi bi-geo-alt-fill" style="margin-right: 3px;"></i> Dubai, United Arab Emirates
+            </span>
+          </div>
           <div class="timeline-content">
             <ul>
-              <li><b>Led</b> UX/UI verification and validation for Etisalat's digital B2C products, including My
-                Etisalat UAE and Smiles UAE apps, collaborating with cross-functional teams to enhance usability,
-                design, and overall quality based on UAT feedback and insights.</li>
+              <li><b>Led</b> the verification of user experience across in-house B2C digital products, including the
+                Etisalat Website, My Etisalat UAE mobile application (Android & iOS), and Smiles UAE mobile application
+                (Android & iOS).</li>
+              <li><b>Collaborated</b> cross-functionally with developers, QA teams, solution architects, product owners,
+                and designers to enhance product UI/UX based on insightful feedback and inputs.</li>
+              <li><b>Specialized</b> in validating the User Interface (UI) and User Experience (UX) for digitally
+                transformed marketing products, ensuring alignment with company standards and user expectations.</li>
+              <li><b>Gained</b> hands-on experience in verifying and validating the designs of a B2C SAS (Self Assisting
+                System) product, contributing to the product's overall quality and user satisfaction.</li>
+              <li><b>Proactively</b> developed a Google Chrome Extension to automate testers' execution effort tracking
+                and
+                generate Daily Status Reports, enhancing team efficiency and communication.</li>
             </ul>
           </div>
         </div>
 
         <div class="timeline-node">
           <div class="timeline-role">UX Designer</div>
-          <span class="timeline-company">Knowledge Lens, Bengaluru | Oct 2018 - Jul 2019</span>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/knowledge_lens.jpeg" alt="Knowledge Lens Logo" class="responsive-logo">
+            <span>Knowledge Lens: A Rockwell Automation Company | Oct 2018 - Jul 2019 · 10 mos</span>
+          </div>
+          <div style="margin-top: 0.25rem;">
+            <span class="skill-tag"
+              style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(var(--accent-primary-rgb), 0.1); border: 1px solid rgba(var(--accent-primary-rgb), 0.2);">
+              <i class="bi bi-geo-alt-fill" style="margin-right: 3px;"></i> Bengaluru, India
+            </span>
+          </div>
           <div class="timeline-content">
             <ul>
-              <li><b>Conducted</b> UX research and <b>designed</b> wireframes, graphical elements, mockups, and
-                prototypes for the PCB (Pollution Control Board) dashboard, in-house LMS (Learning Management System),
-                and managed other multimedia collaterals.</li>
+              <li><b>Implemented</b> UX design using Design Thinking, collaborating cross-functionally with developers
+                and
+                stakeholders.</li>
+              <li><b>Engaged</b> with C-level stakeholders to explore diverse ideas and insights, enriching project
+                perspectives.</li>
+              <li><b>Created</b> wireframes, prototypes, and UI components, delivering high-fidelity mockups to support
+                the development team.</li>
+              <li><b>Designed</b> promotional materials, including posters and infographics, for company branding across
+                LinkedIn, Facebook, and blog posts.</li>
+              <li><b>Enhanced</b> website visuals through image retouching and optimization, elevating the overall
+                visual
+                aesthetics.</li>
             </ul>
+
           </div>
         </div>
+
 
         <div class="timeline-node">
           <div class="timeline-role">Programmer Analyst Trainee</div>
-          <span class="timeline-company">Cognizant, Coimbatore | Dec 2017 - Sep 2018</span>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/cognizant.jpeg" alt="Cognizant Logo" class="responsive-logo">
+            <span>Cognizant | Dec 2017 - Sep 2018 · 10 mos</span>
+          </div>
+          <div style="margin-top: 0.25rem;">
+            <span class="skill-tag"
+              style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(var(--accent-primary-rgb), 0.1); border: 1px solid rgba(var(--accent-primary-rgb), 0.2);">
+              <i class="bi bi-geo-alt-fill" style="margin-right: 3px;"></i> Coimbatore, TN, India
+            </span>
+          </div>
           <div class="timeline-content">
             <ul>
-              <li><b>Developed and maintained</b> end-to-end test scripts to automate regression and unit testing using
-                Selenium, Java, TestNG, Maven, and CITS (Cognizant Intelligent Test Scripter) to streamline the SDLC
-                process.</li>
+              <li><b>Trained</b> in Automation Testing with Selenium, Core Java, and MySQL.</li>
+              <li><b>Utilized CITS</b> (Cognizant Intelligent Test Scripter) and TestNG to streamline the SDLC process
+                and
+                ensure timely project delivery.</li>
+              <li><b>Managed</b> end-to-end test scripts for regression and unit testing.</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="glass-panel">
+        <div class="section-header">
+          <i class="bi bi-mortarboard section-icon"></i>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline-node">
+          <div class="timeline-role">Master of Business Administration - General</div>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/amrita.jpeg" alt="Amrita Logo" class="responsive-logo">
+            <span>Amrita Vishwa Vidyapeetham (AHEAD) | Jul 2021 - Nov 2024</span>
+          </div>
+        </div>
+        <div class="timeline-node">
+          <div class="timeline-role">B. Tech. Computer Science Engineering</div>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/amrita.jpeg" alt="Amrita Logo" class="responsive-logo">
+            <span>Amrita Vishwa Vidyapeetham | 2013 - 2017</span>
+          </div>
+          <div class="timeline-content">
+            <ul>
+              <li>Developed a passion for designing and developing websites and creating Android applications during
+                college.</li>
+              <li>Explored various technologies and methodologies to actualize digital ideas.</li>
+              <li>Volunteered for multiple initiatives, gaining insights into teamwork and coordination.</li>
+              <li>Enhanced interpersonal skills and deepened understanding of professional collaborative dynamics.
+              </li>
+              <li>Successfully developed an Accident Detection Alert System as a final year project, utilizing
+                technologies such as Accelerometer, Pressure Sensors, GPS Sensors, Arduino, and Google Maps API.</li>
             </ul>
           </div>
         </div>
+      </section>
 
-        <div style="margin-top: 3rem; border-top: 1px dotted var(--border-color); padding-top: 2rem;">
-          <h3 class="section-title"><i class="bi bi-mortarboard section-icon"></i> Education</h3>
-          <div class="timeline-node">
-            <div class="timeline-role">Master of Business Administration - General</div>
-            <span class="timeline-company">Amrita Vishwa Vidyapeetham (AHEAD) | Jul 2021 - Nov 2024</span>
+      <!-- Leadership Section -->
+      <section id="leadership" class="glass-panel">
+        <div class="section-header">
+          <i class="bi bi-diagram-3 section-icon"></i>
+          <h2 class="section-title">Leadership & Activities</h2>
+        </div>
+
+        <!-- ARISE 2024 -->
+        <div class="timeline-node">
+          <div class="timeline-role">ARISE 2024 4-Day Symposium Management</div>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/arise.svg" alt="ARISE Logo" class="responsive-logo">
+            <span>Associated with Amrita Vishwa Vidyapeetham | Jan 2024</span>
           </div>
-          <div class="timeline-node">
-            <div class="timeline-role">B. Tech. Computer Science Engineering</div>
-            <span class="timeline-company">Amrita Vishwa Vidyapeetham | 2013 - 2017</span>
-            <div class="timeline-content">
-              <ul>
-                <li>Developed a passion for designing and developing websites and creating Android applications during
-                  college.</li>
-                <li>Explored various technologies and methodologies to actualize digital ideas.</li>
-                <li>Volunteered for multiple initiatives, gaining insights into teamwork and coordination.</li>
-                <li>Enhanced interpersonal skills and deepened understanding of professional collaborative dynamics.
-                </li>
-                <li>Successfully developed an Accident Detection Alert System as a final year project, utilizing
-                  technologies such as Accelerometer, Pressure Sensors, GPS Sensors, Arduino, and Google Maps API.</li>
-              </ul>
+          <div class="timeline-content">
+            <p style="margin-bottom: 0.5rem;">Managed key responsibilities during a large-scale symposium, balancing
+              operations, logistics, and content coordination to ensure a smooth experience for participants and
+              visitors.</p>
+            <div style="margin-bottom: 0.5rem;"><b>1. Exhibition Stall Coordination:</b></div>
+            <ul>
+              <li>Oversaw stall setup and operations, including logistics, material readiness, and inventory
+                management.</li>
+              <li>Delivered a professional exhibit that reflected the organization’s brand and created a seamless
+                visitor
+                experience.</li>
+            </ul>
+            <div style="margin-bottom: 0.5rem; margin-top: 0.5rem;"><b>2. Session Coordination:</b></div>
+            <ul>
+              <li>Served as Thematic Cluster Area (TCA) Associate, supporting session flow by assisting the Master of
+                Ceremonies (MC) and coordinating materials.</li>
+              <li>Managed digital content and live updates on the internal platform to keep participants engaged and
+                informed.</li>
+            </ul>
+            <div class="skills-container" style="margin-top: 0.5rem;">
+              <span class="skill-tag">People Management</span>
+              <span class="skill-tag">Time Management</span>
+              <span class="skill-tag">Problem Solving</span>
             </div>
           </div>
         </div>
 
-        <!-- Leadership Section (RESTORED) -->
-        <div style="margin-top: 3rem; border-top: 1px dotted var(--border-color); padding-top: 2rem;">
-          <h3 class="section-title"><i class="bi bi-diagram-3 section-icon"></i> Leadership & Activities</h3>
-
-          <div class="timeline-node">
-            <div class="timeline-role">Organizing Committee Member - EDT C20 India 2023</div>
-            <span class="timeline-company">The Amrita Center for Research in Analytics, Technologies & Education
-              (AmritaCREATE) | Jan 2023 - July 2023</span>
-            <div class="timeline-content">
-              <ul>
-                <li><b>Organized and Coordinated:</b> Played a key role in the C20 India Education and Digital
-                  Transformation (G20) initiatives, managing logistics and ensuring successful execution of meetings,
-                  workshops, and policy-making events.</li>
-                <li><b>Stakeholder Engagement:</b> Engaged educators, policymakers, and industry professionals through
-                  strategic outreach and collaboration, fostering relationships to advance educational and digital
-                  transformation goals.</li>
-                <li><b>Team Leadership and Document Management:</b> Led a 50+ member team for the C20 EDT Summit,
-                  overseeing document planning, file management, and coordination during the policy-making process to
-                  ensure effective and organized operations.</li>
-                <li><b>Multimedia Design and Direction:</b> Designed and directed multimedia content and print
-                  collateral for webinars, policy-making events, and presentations, demonstrating creative leadership
-                  and project management skills.</li>
-                <li><b>Virtual Event Management and Representation:</b> Managed live streams and led a team overseeing
-                  virtual participants during plenary sessions, ensuring smooth execution and adherence to agendas, and
-                  represented the research center at the C20 IHH Summit in Delhi, showcasing VR demos for a medical
-                  project launch.</li>
-              </ul>
+        <!-- ALARM 2023 -->
+        <div class="timeline-node">
+          <div class="timeline-role">VR Stall – Exhibition Support for ALARM 2023</div>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/amrita.jpeg" alt="Amrita Logo" class="responsive-logo">
+            <span>Associated with Amrita Vishwa Vidyapeetham | Nov 2023</span>
+          </div>
+          <div class="timeline-content">
+            <p style="margin-bottom: 0.5rem;">Supported the ALARM 2023 conference by helping with the setup and
+              coordination of a VR stall for an interactive and immersed experience.</p>
+            <ul>
+              <li>Assisted with stall setup and provided oversight during the planning phase.</li>
+              <li>Trained 2 professors and 8 students on VR equipment usage.</li>
+            </ul>
+            <div class="skills-container" style="margin-top: 0.5rem;">
+              <span class="skill-tag">Virtual Reality (VR)</span>
+              <span class="skill-tag">Team Management</span>
             </div>
           </div>
+        </div>
 
-          <div class="timeline-node">
-            <div class="timeline-role">Thematic Cluster Area (TCA) Associate</div>
-            <span class="timeline-company">ARISE 2024 Symposium | Jan 2024</span>
-            <div class="timeline-content">
-              <ul>
-                <li><b>Set up and managed the VR stall for the Amrita Research & Innovation Symposium for Excellence
-                    (ARISE) 2024,</b> leading and coordinating a team of 10+ members, overseeing setup and inventory,
-                  and ensuring smooth session flow by assisting with display arrangements and responding to the MC's
-                  requests.</li>
-              </ul>
-            </div>
+        <!-- C20 India 2023 -->
+        <div class="timeline-node">
+          <div class="timeline-role">C20 India 2023 – Education and Digital Transformation (G20 Initiative)</div>
+          <div class="timeline-company" style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+            <img src="assets/img/logos/c20.svg" alt="C20 Logo" class="responsive-logo">
+            <span>Associated with Amrita Vishwa Vidyapeetham | Jan 2023 - Jul 2023</span>
           </div>
-
-          <div class="timeline-node">
-            <div class="timeline-role">VR Stall Coordinator</div>
-            <span class="timeline-company">Amrita Legion for Antimicrobial Resistance Management (ALARM) 2023 | Nov
-              2023</span>
-            <div class="timeline-content">
-              <ul>
-                <li><b>VR Stall Coordinator for ALARM 2023,</b> by setting up and managing the VR station for the
-                  conference, training 2 staff members and 8 students on equipment operation to ensure a successful
-                  virtual reality engaging experience for attendees.</li>
-              </ul>
+          <div class="timeline-content">
+            <p style="margin-bottom: 0.5rem;">Contributed as Organizing Committee Member for the Civil 20 (C20)
+              Education and Digital Transformation Summit, driving logistics, stakeholder engagement, and team
+              coordination to ensure smooth delivery of a large-scale G20 initiative.</p>
+            <ul>
+              <li><b>Coordinated</b> logistics and planning for meetings, workshops, and policy-making events.</li>
+              <li><b>Led</b> document planning, formatting, and file management within a 50+ member team to support
+                policy-making processes.</li>
+              <li><b>Engaged</b> educators, policymakers, and professionals through collaboration and outreach to
+                advance C20 goals.</li>
+              <li><b>Managed</b> virtual event operations, including live streaming and participant coordination during
+                plenary sessions.</li>
+              <li><b>Designed</b> multimedia content (PowerPoint templates, brochures, graphical icons, videos, coffee
+                table books) to support communication and event branding.</li>
+              <li><b>Edited</b> profile videos, contributed to storyboarding for project launches, and enhanced
+                readability of policy documents.</li>
+              <li><b>Represented</b> the research center at the C20 Integrated Holistic Health (IHH) Summit,
+                showcasing VR demos for a medical project launch.</li>
+            </ul>
+            <div class="skills-container" style="margin-top: 0.5rem;">
+              <span class="skill-tag">Interpersonal Communication</span>
+              <span class="skill-tag">Team Coordination</span>
+              <span class="skill-tag">Decision-Making</span>
             </div>
           </div>
         </div>
@@ -363,22 +561,22 @@
       <section id="portfolio" class="glass-panel">
         <div class="section-header">
           <i class="bi bi-grid-3x3 section-icon"></i>
-          <h2 class="section-title">Project Database</h2>
+          <h2 class="section-title">Case Studies Database</h2>
         </div>
 
-        <div class="story-terminal">
+        <!-- <div class="story-terminal">
           <h6>> STORY_LOG: Two Cups of Connection</h6>
           <p>"Strategy is about empathy." A simple coffee break taught me a profound lesson. My friend handed me a cup
             with the handle facing exactly towards my right hand. That subtle gesture reduced cognitive load and
             provided a seamless experience. As a product designer, I strive to infuse this level of empathy into every
             design.</p>
-        </div>
+        </div> -->
 
         <div class="grid-gallery">
 
           <a href="3d-simulation.html" class="project-card">
             <div class="card-img-container">
-              <img src="assets/img/portfolio/3d-simulation.jpg" class="card-img" alt="3D Simulation">
+              <img src="assets/img/portfolio/3d_simulation_thumb_v2.png" class="card-img" alt="3D Simulation">
             </div>
             <div class="card-content">
               <h4 class="card-title">3D Simulation</h4>
@@ -388,7 +586,7 @@
 
           <a href="web-app.html" class="project-card">
             <div class="card-img-container">
-              <img src="assets/img/portfolio/web-app.jpg" class="card-img" alt="Web App">
+              <img src="assets/img/portfolio/web_app_thumb_v2.png" class="card-img" alt="Web App">
             </div>
             <div class="card-content">
               <h4 class="card-title">Web Application</h4>
@@ -398,7 +596,7 @@
 
           <a href="mobile-app.html" class="project-card">
             <div class="card-img-container">
-              <img src="assets/img/portfolio/mobile-app.jpg" class="card-img" alt="Mobile App">
+              <img src="assets/img/portfolio/mobile-revamp_thumb_v2.png" class="card-img" alt="Mobile App">
             </div>
             <div class="card-content">
               <h4 class="card-title">Mobile App Revamp</h4>
@@ -408,7 +606,7 @@
 
           <a href="ar-vr-app.html" class="project-card">
             <div class="card-img-container">
-              <img src="assets/img/portfolio/ar-vr.jpg" class="card-img" alt="AR VR">
+              <img src="assets/img/portfolio/ar-vr_thumb_v2.png" class="card-img" alt="AR VR">
             </div>
             <div class="card-content">
               <h4 class="card-title">AR / VR Experiences</h4>
@@ -429,28 +627,56 @@
 
     <footer
       style="text-align: center; color: var(--text-secondary); margin-top: 3rem; font-family: var(--font-mono); font-size: 0.8rem;">
-      SYSTEM_ID: Portfolio_v2.0 // © 2024 AJAY GOVIND
+      SYSTEM_ID: Portfolio_v2.0 // © <span id="currentYear"></span> AJAY GOVIND
     </footer>
   </div>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script>
+    // Set current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
     // Theme Toggle Logic
     const toggleBtn = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
     const body = document.body;
 
+    // Set initial icon state based on class applied in <head>
+    if (document.documentElement.classList.contains('light-theme')) {
+      themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+    }
+
     toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('light-theme');
-      if (body.classList.contains('light-theme')) {
+      const isLight = document.documentElement.classList.toggle('light-theme');
+      if (isLight) {
         themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+        localStorage.setItem('theme', 'light');
       } else {
         themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+        localStorage.setItem('theme', 'dark');
       }
     });
 
+    // Back to Top Button Logic
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
     // Lightbox (Simplified since links are now direct)
-    // We keep this just in case there are other lightboxes, but for portfolio it's disabled.
     const lightbox = GLightbox({
       selector: '.glightbox',
       touchNavigation: true,
@@ -461,8 +687,24 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
       });
+    });
+
+    // Handle hash on page load (for scroll to portfolio from subpages)
+    window.addEventListener('load', () => {
+      // Check if we came from a subpage by checking sessionStorage flag
+      const shouldScroll = sessionStorage.getItem('returnFromProject');
+      if (shouldScroll === 'true' && window.location.hash === '#portfolio') {
+        sessionStorage.removeItem('returnFromProject'); // Clear flag immediately
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
     });
   </script>
 </body>

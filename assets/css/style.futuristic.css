@@ -33,7 +33,7 @@
 }
 
 /* Light Mode ("Lab Clean") overrides */
-body.light-theme {
+.light-theme {
     --bg-color: #f0f2f5;
     --bg-pattern: radial-gradient(circle at 1px 1px, #d1d5db 1px, transparent 0);
     --surface-color: #ffffff;
@@ -80,9 +80,25 @@ img {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+    color: var(--accent-primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
     transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-secondary);
+    filter: brightness(1.2);
+}
+
+/* Nav links should NOT be underlined by default */
+.nav-item,
+.nav-brand a,
+.social-btn,
+.project-card,
+.btn-cyber {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Typography Utilities */
@@ -95,6 +111,11 @@ h6 {
     font-family: var(--font-display);
     font-weight: 700;
     letter-spacing: -0.02em;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .mono {
@@ -145,16 +166,23 @@ h6 {
     letter-spacing: 0.05em;
     color: var(--text-primary);
     border: 1px solid var(--accent-primary);
-    padding: 4px 10px;
     border-radius: 4px;
-    text-shadow: var(--accent-glow);
-    box-shadow: var(--accent-glow);
+    display: flex;
+    align-items: center;
 }
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 4px 10px;
+    cursor: pointer !important;
+}
+
 
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
 }
 
 .nav-links {
@@ -163,11 +191,43 @@ h6 {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .navbar {
+        height: auto;
+        padding: 12px 0;
     }
 
-    /* Mobile Menu could be added, but keeping consistent top bar for now */
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        gap: 12px;
+    }
+
+    .nav-brand {
+        flex: 0 1 auto;
+        margin: 0 auto;
+    }
+
+    .nav-right {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 4px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.25rem;
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        right: 1.5rem;
+        top: 0;
+        transform: translateY(15%);
+    }
 }
 
 /* Theme Toggle */
@@ -238,7 +298,6 @@ h6 {
     /* User Request: Profile picture needs to be pushed a little down inside that circle */
     object-position: center 20%;
     border: 3px solid var(--accent-primary);
-    box-shadow: var(--accent-glow);
 }
 
 @keyframes spin {
@@ -252,6 +311,7 @@ h6 {
     margin-bottom: 0.5rem;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -260,18 +320,21 @@ h6 {
     color: var(--text-secondary);
     margin-bottom: 1rem;
     font-family: var(--font-mono);
+    text-align: justify;
 }
 
 /* Indian Flag Styled */
 .indian-badge {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 8px 16px;
     background: var(--surface-hover);
     border-radius: 20px;
     font-weight: 700;
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
     border: 1px solid var(--border-color);
+    /* text-align: justify; */
+    text-justify: inter-word;
 }
 
 .flag-in {
@@ -551,4 +614,122 @@ h6 {
 .gslide-description {
     background: var(--surface-color);
     color: var(--text-primary);
+}
+
+/* Sub-sub headings */
+h6 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 1.5rem 0 0.5rem 0;
+    opacity: 1;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 30px;
+    bottom: 30px;
+    z-index: 996;
+    background: var(--accent-primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-color);
+    box-shadow: var(--accent-glow);
+    border: none;
+    cursor: pointer;
+}
+
+.back-to-top i {
+    font-size: 24px;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: var(--accent-secondary);
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Adjust timeline links to not have default underlines if they are just headers */
+.timeline-role a {
+    text-decoration: none;
+}
+
+/* Availability Badge */
+.hero-avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.availability-badge {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: #fff;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #22c55e;
+    /* Green */
+    border-radius: 50%;
+    box-shadow: 0 0 8px #22c55e;
+    position: relative;
+}
+
+.status-dot::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #22c55e;
+    border-radius: 50%;
+    animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Light Theme Badge Adjustment */
+.light-theme .availability-badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: #0f172a;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
